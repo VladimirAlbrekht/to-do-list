@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>To do list</title>
+
+</head>
+
+<body>
+    <main class="content">
+        <form action="" class="form">
+            <input name='input' type="text" class="input-task" minlength='5' required>
+            <button class='button-add' type="submit">Add new task</button>
+        </form>
+        <ul class="tasks__list">
+        </ul>
+        <ul id="country-list"></ul>
+    </main>
+    <footer class="footer"></footer>
+    <template id="template">
+        <li class="task">
+            <span class="task__text"></span>
+            <div class="task__buttons-container"> 
+                <button class="task__button-delete">&#10008;</button>
+                <button class="task__button-done"></button>
+            </div>
+        </li>
+    </template>
+    <script src="./index.js"></script>
+</body>
+
+</html>
